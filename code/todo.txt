@@ -1,0 +1,21 @@
+1. create ember handlebar templates from existing html files
+2. compile templates with gulp
+	install a package.json file 
+	create a gulpfile that will compile ember templates
+	install all necessary gulp packages and save them as dev dependencies
+	include a clean step (** gulp-clean package)
+	add template reference to the index.html file
+3. create an ember application
+	add a new file in the path js/app called app.js
+	create an Ember application
+	add a reference for 
+		handlebars	
+		ember
+		app.js
+		just after the jquery reference
+
+4. map routes
+	define and map routes for index, about, post and contact
+	change anchor tags in the application.handlebar to use the handlebar syntaxt to point to the routes for navigation
+	change the posts links on the index.handebars to use the handlebars syntaxt for navigation
+ 
