@@ -17,7 +17,7 @@ gulp.task('cleanup', function () {
 
 });
 
-gulp.task('compiletemplates', function () {
+gulp.task('compiletemplates',['cleanup'], function () {
     return gulp.src(templatesHandlebars)
         .pipe(print(function (name) {
             return "INPUT: " + name;
@@ -36,4 +36,4 @@ gulp.task('compiletemplates', function () {
         .pipe(gulp.dest(templatesOutDir));
 });
 
-gulp.task('default', ['cleanup','compiletemplates']);
+gulp.task('default', ['compiletemplates']);
